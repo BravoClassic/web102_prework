@@ -23,11 +23,10 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='https://i.imgur.com/c2hzWuK.gifv' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/c2hzWuK.gif' title='Video Walkthrough' width='100' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-[Kap](https://getkap.co/) for macOS
+GIF created with [Kap](https://getkap.co/) for macOS
 <!-- Recommended tools:
 [ScreenToGif](https://www.screentogif.com/) for Windows
 [peek](https://github.com/phw/peek) for Linux. -->
@@ -35,6 +34,8 @@ GIF created with ...
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+
 
 ## License
 
