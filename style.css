@@ -83,3 +83,15 @@ button {
     cursor: pointer;
     box-shadow: 0 0 30px lightblue;
 }
+
+#searchbar-container {
+    display: flex;
+    justify-content: center;
+}
+
+#searchbar {
+    padding: 1rem;
+    border-radius: 7px;
+    border: none;
+    margin-bottom: 1%;
+}

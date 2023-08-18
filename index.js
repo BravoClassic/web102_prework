@@ -213,3 +213,40 @@ runnerUp.innerHTML = `
     ${second.name}
     `;
 secondGameContainer.appendChild(runnerUp);
+
+
+/************************************************************************************
+ * Challenge 8: Add a search bar to the page
+ * Skills used: event listeners, filter, includes
+ */
+ 
+// grab the search bar element
+
+const searchBar = document.getElementById("searchbar");
+
+function searchGames(e){
+  //remove exisitng games in game container
+  deleteChildElements(gamesContainer)
+
+  //create list of games that are 
+  let searchedGames = GAMES_JSON.filter((game)=>{
+    return game.name.includes(e.target.value)
+  })
+  if (!e.target.value){ // Display all games of the searchbar is empty
+    deleteChildElements(gamesContainer);
+
+    // add all games from the JSON data to the DOM
+    addGamesToPage(GAMES_JSON);
+  }
+
+  if (e.target.value && searchGames){
+    deleteChildElements(gamesContainer)
+    let noGamesFound = document.createElement("p");
+    noGamesFound.innerText = "No games found! :("
+    gamesContainer.appendChild(noGamesFound)
+  }
+
+  addGamesToPage(searchedGames)
+}
+
+searchBar.addEventListener("input",searchGames)
