@@ -230,7 +230,7 @@ function searchGames(e){
 
   //create list of games that are 
   let searchedGames = GAMES_JSON.filter((game)=>{
-    return game.name.includes(e.target.value)
+    return game.name.toLowerCase().includes(e.target.value)
   })
   if (!e.target.value){ // Display all games of the searchbar is empty
     deleteChildElements(gamesContainer);
@@ -238,8 +238,7 @@ function searchGames(e){
     // add all games from the JSON data to the DOM
     addGamesToPage(GAMES_JSON);
   }
-
-  if (e.target.value && searchGames){
+  if (searchedGames == ""){
     deleteChildElements(gamesContainer)
     let noGamesFound = document.createElement("p");
     noGamesFound.innerText = "No games found! :("
