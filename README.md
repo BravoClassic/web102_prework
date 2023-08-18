@@ -26,7 +26,7 @@ Here's a walkthrough of implemented features:
 
 
 
-![Video Walkthrough](https://i.imgur.com/hA4gVWt.gif)
+![](https://github.com/BravoClassic/web102_prework/blob/main/seamonster.gif)
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with [Kap](https://getkap.co/) for macOS
