@@ -238,7 +238,7 @@ function searchGames(e){
     // add all games from the JSON data to the DOM
     addGamesToPage(GAMES_JSON);
   }
-  if (searchedGames == ""){
+  if (e.target.value && searchedGames == ""){
     deleteChildElements(gamesContainer)
     let noGamesFound = document.createElement("p");
     noGamesFound.innerText = "No games found! :("
